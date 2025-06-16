@@ -16,11 +16,11 @@ if (darkmode === 'active') {
 }
 
 themeSwitch.addEventListener('click', () => {
-    darkmode = localStorage.getItem('darkmode');
+        darkmode = localStorage.getItem('darkmode');
 
-    if (darkmode !== 'active') {
-        enableDarkmode();
-    } else {
-        disableDarkmode();
-    }
+        if (darkmode !== 'active') {
+            enableDarkmode();
+        } else {
+            disableDarkmode();
+        }
 })
