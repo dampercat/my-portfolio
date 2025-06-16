@@ -267,7 +267,6 @@ hr {
     padding: 0;
 }
 
-
 button {
     padding: 10px;
     margin-top: 30px;
@@ -299,4 +298,71 @@ footer {
 .copy {
     font-size: large;
     padding-bottom: 30px;
+}
+
+/* Adding mobile response */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .right a {
+    margin-right: 0;
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  .intro p,
+  .projects p,
+  .contact p {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .pfp {
+    width: 40%;
+    margin: 20px auto;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+
+  .projects,
+  .contact {
+    padding: 20px 0;
+  }
+
+  .long {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .name {
+    text-align: center;
+    padding: 10px 0;
+  }
 }
