@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
-    <script src="https://kit.fontawesome.com/2cdea839ea.js" crossorigin="anonymous"></script>
-
-
-</head>
-<body>
-    <main>
-        <div class="navbar">
-            <div class="left">
-                <h2><a href="#" class="name">Myles M.</a></h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="darkmode.js" defer></script>
+        
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+        <script src="https://kit.fontawesome.com/2cdea839ea.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <div class="navbar">
+                <div class="left">
+                    <h2><a href="#" class="name">Myles M.</a></h2>
+                </div>
+                <div class="right">
+                    <a href="./index.html#">Home</a>
+                    <a href="./projects.html">Projects</a> <!--Change to a new page-->
+                    <a href="#contact">Leave a message!</a>
+                </div>
             </div>
-            <div class="right">
-                <a href="#">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Leave a message!</a>
+            <div class="intro">
+                <button id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                </button>
+                <h2 class="face">Personal Portfolio: A Sneak Peek</h2>
+                <hr>
+                <img class="pfp" src="./pfp.png" alt="pfp">
+                <p>Hey, I'm Myles, an aspiring high-school graduate from <a href="https://ptis.ac.th/" target="_blank">PTIS</a>, one who's incredibly excited and ready to dive deeper into the world of software and web development. With a background in Computer Science, Math, and Physics, I'm well equipped with a foundational skillset and an eagerness to experiment!</p>
+                <br>
+                <p>Outside of career and academics, I enjoy athletics, board games, and watching animated movies and series!</p>
             </div>
-        </div>
-        <div class="intro">
-            <h2 class="face">Personal Portfolio: A Sneak Peek</h2>
-            <hr>
-            <img class="pfp" src="./pfp.png" alt="pfp">
-            <p>Hey, I'm Myles, an aspiring high-school graduate from <a href="https://ptis.ac.th/" target="_blank">PTIS</a>, one who's incredibly excited and ready to dive deeper into the world of software and web development. With a background in Computer Science, Math, and Physics, I'm well equipped with a foundational skillset and an eagerness to experiment!</p>
             <br>
-            <p>Outside of career and academics, I enjoy athletics, board games, and watching animated movies and series!</p>
-        </div>
-        <br>
-        <div class="icons">
-            <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://discord.com/app" target="_blank"><i class="fa-brands fa-discord"></i></a>
-            <a href="https://github.com/dampercat" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="projects" id="projects">
+            <div class="icons">
+                <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://discord.com/app" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://github.com/dampercat" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="projects" id="projects">
+                <hr class="long">
+                <h2 class="face lang">Programming Languages</h2>
+                <hr>
+                <br>
+                <p>My primary focus is on a few programming languges. I believe in learning programming in a systematic manner; whether this applies to software development, web development, or any other form of occupation, having a systematic approach is beneficial to the workflow.</p>
+                <br>
+                <p>I am currently learning Python, HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="icons languages">
+                <a><i class="fa-brands fa-python"></i></a>
+                <a><i class="fa-brands fa-html5"></i></a>
+                <a><i class="fa-brands fa-css3-alt"></i></a>
+                <a><i class="fa-brands fa-js"></i></a>
+            </div>
+            <div class="contact" id="contact">
+                <hr class="long">
+                <h2 class="face msg">Leave a Message!</h2>
+                <hr>
+                <p>Please feel free to contact me for any more information below!</p>
+            </div>
+            <br>
+            <div class="icons">
+                <a href="mailto:mylesthestudent@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </main>
+        <footer>
             <hr class="long">
-            <h2 class="face lang">Programming Languages</h2>
-            <hr>
-            <br>
-            <p>My primary focus is on a few programming languges. I believe in learning programming in a systematic manner; whether this applies to software development, web development, or any other form of occupation, having a systematic approach is beneficial to the workflow.</p>
-            <br>
-            <p>I am currently learning Python, HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="icons languages">
-            <a><i class="fa-brands fa-python"></i></a>
-            <a><i class="fa-brands fa-html5"></i></a>
-            <a><i class="fa-brands fa-css3-alt"></i></a>
-            <a><i class="fa-brands fa-js"></i></a>
-        </div>
-        <div class="contact" id="contact">
-            <hr class="long">
-            <h2 class="face msg">Leave a Message!</h2>
-            <hr>
-            <p>Please feel free to contact me for any more information below!</p>
-        </div>
-        <br>
-        <div class="icons">
-            <a href="mailto:mylesthestudent@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-    </main>
-    <footer>
-        <hr class="long">
-        <p class="copy">Copyright <a><i class="fa-solid fa-copyright"></i></a> 2025</p>
-    </footer>
-</body>
+            <p class="copy">Copyright <a><i class="fa-solid fa-copyright"></i></a> 2025</p>
+        </footer>
+    </body>
 </html>
