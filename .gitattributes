@@ -8,6 +8,3 @@ start.mp3 filter=lfs diff=lfs merge=lfs -text
 folder/Web/Port/audio/a[[:space:]]fresh[[:space:]]start.mp3 filter=lfs diff=lfs merge=lfs -text
 /Users/mylesm/Desktop/untitled[[:space:]]folder/Web/Port/audio/a[[:space:]]fresh[[:space:]]start.mp3 filter=lfs diff=lfs merge=lfs -text
 /Users/mylesm/Desktop/untitled[[:space:]]folder/Web/Port/audio/Untitled.mp3 filter=lfs diff=lfs merge=lfs -text
-audio/[as].mp3 filter=lfs diff=lfs merge=lfs -text
-audio/Untitled.mp3 filter=lfs diff=lfs merge=lfs -text
-audio/a[[:space:]]fresh[[:space:]]start.mp3 filter=lfs diff=lfs merge=lfs -text
