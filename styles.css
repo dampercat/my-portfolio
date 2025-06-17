@@ -150,6 +150,7 @@ a:hover, .icons:hover {
     width: 100%;
     height: auto;
     padding-top: 70px;
+    overflow: hidden;
 }
 
 .intro p {
