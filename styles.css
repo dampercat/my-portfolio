@@ -147,7 +147,6 @@ a:hover, .icons:hover {
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: auto;
     width: 100%;
     height: auto;
     padding-top: 70px;
@@ -193,7 +192,6 @@ hr {
     justify-content: center;
     font-size: 35px;
     margin: auto;
-    padding: auto;
     width: 0;
     height: auto;
     color: var(--primary-color);
@@ -280,8 +278,8 @@ hr {
 
 .music-card {
     flex: 1;
-    width: 100%;
-    max-width: 90vw;
+    width: 90vw;
+    max-width: 400px;
     box-sizing: border-box;
     margin: 0 auto;
     background-color: var(--button-bg);
@@ -300,9 +298,18 @@ hr {
 }
 
 @media only screen and (max-width: 1030px) {
-  .row {
-    flex-direction: column;
-  }
+    .row {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .music-rows, .row {
+        align-items: center;
+        padding: 0;       /* Remove extra side padding */
+        margin: 0 auto;   /* Center container horizontally */
+    }
+
 }
 
 .lang {
