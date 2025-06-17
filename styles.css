@@ -33,7 +33,7 @@
 }
 
 input, textarea, select, p, h1, h2, h3 ::selection {
-  cursor: url('./cursors/text.png'), auto !important;
+  cursor: text !important;
 }
 
 body {
@@ -233,6 +233,34 @@ hr {
     font-weight: 200;
     padding: 0;
     margin: 0;
+}
+
+.definition {
+    position: relative;
+    cursor: help !important;
+    border-bottom: 2px dotted grey;
+}
+
+.definition::after {
+    content: attr(define);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+.definition:hover::after {
+    opacity: 1;
 }
 
 .lang {
