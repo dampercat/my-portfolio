@@ -301,68 +301,81 @@ footer {
 }
 
 /* Adding mobile response */
-
 @media only screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px 10px;
-    text-align: center;
-  }
+    .right, .projects, .contact {
+        flex-direction: column;
+        flex-wrap: wrap;  /* So items don't overflow */
+        justify-content: space-between;  /* Adjust based on spacing needs */
+        align-items: center;
+    }
 
-  .right {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        width: 100%;
+    }
 
-  .right a {
-    margin-right: 0;
-    padding: 8px;
-    font-size: 18px;
-  }
+    .navbar a {
+        display: flex;
+        flex-direction: row;
+    }
 
-  .intro p,
-  .projects p,
-  .contact p {
-    width: 90%;
-    font-size: 16px;
-    text-align: center;
-  }
+    .navbar .right { /* To be fixed for mobile response */
+        display: flex;
+        flex-direction: row;   /* keep links in a horizontal row */
+        justify-content: space-between; /* center them horizontally */
+        gap: 1px;              /* space between links */
+        margin-top: 1px;
+    }
 
-  .pfp {
-    width: 40%;
-    margin: 20px auto;
-  }
+    .navbar .left {
+        display: flex;
+        flex-direction: row;   /* keep links in a horizontal row */
+        justify-content: left; /* center them horizontally */
+        margin-top: 1px;
+        width: 100%;
+        font-size: 100%;
+        margin-left: -10px;
+    }
 
-  .icons {
-    flex-wrap: wrap;
-    font-size: 30px;
-    padding: 10px 0;
-  }
+    .intro p, .projects p, .contact p {
+        font-size: 17px;
+        margin: 5px;
+        padding: 5px;
+        width: 80%;
+    }
 
-  .projects,
-  .contact {
-    padding: 20px 0;
-  }
+    .pfp {
+        width: 25%;
+    }
 
-  .long {
-    width: 90%;
-    margin-bottom: 20px;
-  }
+    button {
+        width: auto;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 
-  button {
-    width: 90%;
-    font-size: 16px;
-  }
+    .icons {
+        justify-content: center;
+        gap: 10px;
+    }
 
-  h1, h2, h3 {
-    font-size: 1.4em;
-    text-align: center;
-  }
+    body {
+        overflow-x: hidden;
+        font-size: 90%;
+    }
 
-  .name {
-    text-align: center;
-    padding: 10px 0;
-  }
+    .face {
+        width: 85%;
+        height: auto;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 38px;
+        width: 80%;
+        height: 50%;
+    }
 }
