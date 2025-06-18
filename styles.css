@@ -576,7 +576,7 @@ footer {
 }
 
 /* Extra check for pixel ration and device response for mobile */
-@media only screen and (device-width: 361px) {
+@media only screen and (max-width: 361px) {
     .right, .projects, .contact {
         flex-direction: column;
         flex-wrap: wrap;  /* So items don't overflow */
@@ -589,13 +589,12 @@ footer {
         flex-direction: row;
         height: 5%;
         width: 100%;
-        padding: 30px 10px 30px 30px;
     }
 
     .navbar a {
         display: flex;
         flex-direction: row;
-        font-size: 23px;
+        font-size: 12px;
     }
 
     .navbar .right { /* To be fixed for mobile response */
@@ -613,8 +612,7 @@ footer {
         justify-content: left; /* center them horizontally */
         margin-top: 1px;
         width: 100%;
-        font-size: 100%;
-        margin-left: -10px;
+
     }
 
     .intro p, .projects p, .contact p {
@@ -631,7 +629,9 @@ footer {
     button {
         width: auto;
         padding: 8px 12px;
-        font-size: 14px;
+        margin-right: -5px;
+        margin-top: 0;
+        font-size: 14px;   
     }
 
     .icons {
