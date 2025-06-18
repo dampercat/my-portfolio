@@ -315,7 +315,7 @@ hr {
 }
 
 
-.player audio {
+.player audio { /* Fixing issues with display for mobile; hopefully easier to deal with */
     border: 2px solid var(--border-color);
     border-radius: 30px;
 }
