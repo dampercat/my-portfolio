@@ -293,6 +293,11 @@ hr {
     text-align: center;
 }
 
+.music-card:hover {
+    transform: translateY(-5px);
+    cursor: url('./cursors/pointer.png'), auto;
+}
+
 .music-title {
     font-weight: bold;
     padding-bottom: 10px;
@@ -303,6 +308,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .content p {
@@ -312,12 +318,30 @@ hr {
 
 .player {
     padding: 20px;
+    margin-top: 10px;
 }
-
 
 .player audio { /* Fixing issues with display for mobile; hopefully easier to deal with */
     border: 2px solid var(--border-color);
     border-radius: 30px;
+}
+
+#untitled {
+    height: 195px;
+    margin-bottom: 10px;
+}
+
+#untitled-player {
+    margin-top: -4px;
+}
+
+#as-player {
+    margin-top: -6px;
+}
+
+.displayer {
+    display: flex;
+    justify-content: center;
 }
 
 .displayer img {
@@ -325,10 +349,60 @@ hr {
     border-radius: 13px;
 }
 
-.music-card:hover {
-    transform: translateY(-5px);
-    cursor: url('./cursors/pointer.png'), auto;
+.displayer #as-cover {
+    width: 70%;
+    height: 195px;
 }
+
+.ableton {
+    width: 57px;
+    height: 57px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    cursor: url("./cursors/default.png"), auto;
+}
+
+.ableton::before,
+.ableton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+}
+
+/* Light mode default image */
+.ableton::before {
+    background-image: url("./etc/light\ mode.png");
+    opacity: 1;
+}
+
+/* Light mode hover image */
+.ableton::after {
+    background-image: url("./etc/light\ mode\ hover.png");
+    opacity: 0;
+}
+
+.ableton:hover::after {
+    opacity: 1;
+}
+
+.ableton:hover::before {
+    opacity: 0;
+}
+
+/* Dark Mode */
+.darkmode .ableton::before {
+    background-image: url("./etc/dark\ mode.png");
+}
+
+.darkmode .ableton::after {
+    background-image: url("./etc/dark\ mode\ hover.png");
+}
+
+
 
 @media only screen and (max-width: 1030px) {
     .row {
