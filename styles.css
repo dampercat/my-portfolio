@@ -824,6 +824,11 @@ footer {
 
 
 @media only screen and (min-width: 0px) and (max-width: 360px) {
+    * {
+        overflow: auto;
+        box-sizing: border-box;
+    }
+    
     .navbar {
         flex-direction: row;
         align-items: center;
