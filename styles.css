@@ -429,6 +429,7 @@ footer {
     .navbar a {
         display: flex;
         flex-direction: row;
+        font-size: 23px;
     }
 
     .navbar .right { /* To be fixed for mobile response */
@@ -437,6 +438,90 @@ footer {
         justify-content: space-between; /* center them horizontally */
         gap: 1px;              /* space between links */
         margin-top: 1px;
+        margin-left: -500px;
+    }
+
+    .navbar .left {
+        display: flex;
+        flex-direction: row;   /* keep links in a horizontal row */
+        justify-content: left; /* center them horizontally */
+        margin-top: 1px;
+        width: 100%;
+        font-size: 100%;
+        margin-left: -10px;
+    }
+
+    .intro p, .projects p, .contact p {
+        font-size: 17px;
+        margin: 5px;
+        padding: 5px;
+        width: 80%;
+    }
+
+    .pfp {
+        width: 25%;
+    }
+
+    button {
+        width: auto;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .icons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    body {
+        overflow-x: hidden;
+        font-size: 90%;
+    }
+
+    .face {
+        width: 85%;
+        height: auto;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 38px;
+        width: 80%;
+        height: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .right, .projects, .contact {
+        flex-direction: column;
+        flex-wrap: wrap;  /* So items don't overflow */
+        justify-content: space-between;  /* Adjust based on spacing needs */
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        height: 5%;
+        width: 100%;
+        padding: 30px 10px 30px 30px;
+    }
+
+    .navbar a {
+        display: flex;
+        flex-direction: row;
+        font-size: 23px;
+    }
+
+    .navbar .right { /* To be fixed for mobile response */
+        display: flex;
+        flex-direction: row;   /* keep links in a horizontal row */
+        justify-content: space-between; /* center them horizontally */
+        gap: 1px;              /* space between links */
+        margin-top: 1px;
+        margin-left: -500px;
     }
 
     .navbar .left {
