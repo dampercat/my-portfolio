@@ -618,6 +618,19 @@ footer {
         width: auto;
     }
 
+    .hard {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #theme-switch {
+        top: 170px;
+    }
+
     .intro p, .projects p, .contact p {
         font-size: 18px;
         width: 70%;
@@ -654,19 +667,18 @@ footer {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 361px) and (max-width: 767px) {
     .navbar {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         padding: 25px;
         width: 100%;
-        margin-bottom: 0;
-        
+        margin-bottom: 0;   
     }
 
     .navbar a {
-        font-size: 13px;
+        font-size: 15px;
         white-space: nowrap;
     }
 
@@ -692,7 +704,173 @@ footer {
     }
 
     .hard {
-        margin-top: -60px;
+        margin-top: clamp(-60px, -45px, 10px)
+    }
+
+    #theme-switch {
+        top: 170px;
+    }
+
+    .intro p, .projects p, .contact p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .pfp {
+        width: 28%;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px 10px;
+        width: auto;
+    }
+
+    .icons {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .face {
+        font-size: 28px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 34px;
+        width: 85%;
+    }
+
+    body {
+        font-size: 85%;
+        overflow-x: hidden;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 360px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 25px;
+        width: 100%;
+        margin-bottom: 0;
+        
+    }
+
+    .navbar a {
+        font-size: 15.6px;
+        white-space: nowrap;
+    }
+
+    .navbar .left:first-child {
+        display: none;
+    }
+
+    .navbar .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0px;
+        margin-right: -20px;
+        flex-wrap: wrap;
+        gap: 5px
+    }
+
+    .navbar .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .hard {
+        margin-top: -40px;
+    }
+
+    #theme-switch {
+        top: 170px;
+    }
+
+    .intro p, .projects p, .contact p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .pfp {
+        width: 28%;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px 10px;
+        width: auto;
+    }
+
+    .icons {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .face {
+        font-size: 28px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 34px;
+        width: 85%;
+    }
+
+    body {
+        font-size: 85%;
+        overflow-x: hidden;
+    }
+}
+
+
+@media only screen and (width: 344px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 21.8px;
+        width: 100%;
+        margin-bottom: 0;
+        
+    }
+
+    .navbar a {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .navbar .left:first-child {
+        display: none;
+    }
+
+    .navbar .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0px;
+        margin-right: -20px;
+        flex-wrap: wrap;
+        gap: 5px
+    }
+
+    .navbar .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .hard {
+        margin-top: -40px;
     }
 
     #theme-switch {
