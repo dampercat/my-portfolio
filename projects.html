@@ -61,14 +61,14 @@
                                 <p>This was the first piece I created that truly felt like the best I'd created by far. Created on the 8th of April, it symbolizes and effectively summarizes the power of spontaneity and intention when one considers emotional impact on certain events, occassions, or whatever the situation effectively calls for.</p>
                             </div>
                             <div class="player">
-                                <audio id="song">
+                                <audio class="song">
                                     <source src="./audio/a_fresh_start.mp3" type="audio/mpeg">
                                       Your browser does not support the audio element.
                                 </audio>
-                                <input type="range" value="0" id="progress">
+                                <input type="range" value="0" class="progress">
                                 <div class="controls">
                                    <div><i class="fa-solid fa-rotate-left"></i></i></div>
-                                   <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                   <div onclick="playPause()"><i class="fa-solid fa-play ctrlIcon"></i></div>
                                    <div><i class="fa-solid fa-rotate-right"></i></i></div>
                                 </div>
                             </div>
@@ -79,13 +79,19 @@
                                 <img src="./etc/Untitled.jpg" alt="cover image" id="untitled">
                             </div>
                             <div class="content">
-                                <p>This is the first piece as of late that I've made that really encapsulates my learning curve. I delved deeply in this piece by using my own voice for the first time, and it proved to be a journey worth the time and experience. I learnt a lot from these 54 seconds, and plan to explore to even greater depths! </p>
+                                <p>This is the first piece as of late that I've made that really encapsulates my learning curve. I delved deeply in this piece by using my own voice for the first time, and it proved to be a journey worth the time and experience. I learnt a lot from the time spent on this, and plan to explore to even greater depths! </p>
                             </div>
                             <div class="player">
-                                <audio controls id="untitled-player">
+                                <audio class="song">
                                     <source src="./audio/Untitled.mp3" type="audio/mpeg">
                                       Your browser does not support the audio element.
                                 </audio>
+                                <input type="range" value="0" class="progress">
+                                <div class="controls">
+                                   <div><i class="fa-solid fa-rotate-left"></i></i></div>
+                                   <div onclick="playPause()"><i class="fa-solid fa-play ctrlIcon"></i></div>
+                                   <div><i class="fa-solid fa-rotate-right"></i></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="music-card">
@@ -97,10 +103,16 @@
                                 <p>This is an older piece, when I was first exploring different sounds, as well as learning more about <span class="definition" define="Software used to simulate traditional recording studio hardware.">VST plugins</span>. Back then, my compositions revolved around synthesizers, automations, and attempts at mixing. Though I've since improved, it makes for a great piece to look back on from that era.</p>
                             </div>
                             <div class="player">
-                                <audio controls id="as-player">
+                                <audio class="song">
                                     <source src="./audio/as.mp3" type="audio/mpeg">
                                       Your browser does not support the audio element.
                                 </audio>
+                                <input type="range" value="0" class="progress">
+                                <div class="controls">
+                                   <div><i class="fa-solid fa-rotate-left"></i></i></div>
+                                   <div onclick="playPause()"><i class="fa-solid fa-play ctrlIcon"></i></div>
+                                   <div><i class="fa-solid fa-rotate-right"></i></i></div>
+                                </div>
                             </div>
                         </div>
                     </div>
