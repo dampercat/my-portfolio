@@ -59,7 +59,7 @@ a:hover, .icons:hover {
     color: var(--hover-color);
 }
 
-#theme-switch, #translate {
+#theme-switch {
     color: black;
     height: 50px;
     width: 50px;
@@ -77,8 +77,22 @@ a:hover, .icons:hover {
 }
 
 #translate {
-    top: 160px;
+    color: black;
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    margin-top: 10px;
+    border: none;
     border-radius: 10px;
+    background-color: #dfdddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 38px;
+    cursor: url('./cursors/pointer.png'), auto;
+    top: 160px;
+    z-index: 1000;
 }
 
 #theme-switch svg {
@@ -410,8 +424,7 @@ hr {
     cursor: url("./cursors/default.png"), auto;
 }
 
-.ableton::before,
-.ableton::after {
+.ableton::before, .ableton::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -1046,3 +1059,15 @@ footer {
         overflow-x: hidden;
     }
 }
+
+/*
+ -> To be dealt with for smoother translation and also it not defaulting to Thai/any local locational language
+body > .skiptranslate {
+    display: none !important;
+    height: 0 !important;
+}
+
+body {
+    top: 0px !important;
+}
+*/

@@ -89,6 +89,7 @@ document.querySelectorAll(".music-card").forEach(card => {
     });
 });
 
+
 /* Original play pause functions
 const progress = document.getElementById("progress");
 const song = document.getElementById("song");
