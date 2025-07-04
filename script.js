@@ -1,3 +1,5 @@
+// Darkmode Functionality
+
 let darkmode = localStorage.getItem('darkmode');
 const themeSwitch = document.getElementById("theme-switch");
 
@@ -24,6 +26,8 @@ themeSwitch.addEventListener('click', () => {
             disableDarkmode();
         }
 })
+
+// Music Card Functionality
 
 document.querySelectorAll(".music-card").forEach(card => {
     const song = card.querySelector(".song");

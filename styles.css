@@ -76,25 +76,6 @@ a:hover, .icons:hover {
     cursor: url('./cursors/pointer.png'), auto;
 }
 
-#translate {
-    color: black;
-    height: 150px;
-    width: 150px;
-    padding: 0;
-    margin-top: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: #dfdddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 38px;
-    cursor: url('./cursors/pointer.png'), auto;
-    top: 160px;
-    z-index: 1000;
-}
-
 #theme-switch svg {
     fill: black;
 }
@@ -765,10 +746,6 @@ footer {
         top: 170px;
     }
 
-    #translate {
-        top: 250px;
-    }
-
     .intro p, .projects p, .contact p {
         font-size: 18px;
         width: 70%;
@@ -847,10 +824,6 @@ footer {
 
     #theme-switch {
         top: 170px;
-    }
-
-    #translate {
-        top: 250px;
     }
 
     .intro p, .projects p, .contact p {
@@ -934,10 +907,6 @@ footer {
 
     #theme-switch {
         top: 170px;
-    }
-
-    #translate {
-        top: 250px;
     }
 
     .intro p, .projects p, .contact p {
