@@ -52,7 +52,7 @@
                 <h2 class="face lang">My Music Selection</h2>
                 <hr>
                 <br>
-                <section class="music-rows"> <!-- Make another one of these for something not music -->
+                <section class="music-rows"> <!-- First music display; make another one of these for something not music -->
                     <div class="row">
                         <div class="music-card">
                             <div class="music-title">a fresh start.wav</div>
@@ -110,6 +110,73 @@
                             <div class="player">
                                 <audio class="song">
                                     <source src="./audio/as.mp3" type="audio/mpeg">
+                                      Your browser does not support the audio element.
+                                </audio>
+                                <input type="range" value="0" class="progress">
+                                <div class="controls">
+                                   <div><i class="fa-solid fa-rotate-left"></i></i></div>
+                                   <div onclick="playPause()"><i class="fa-solid fa-play ctrlIcon"></i></div>
+                                   <div><i class="fa-solid fa-rotate-right"></i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="music-rows"> <!-- Second music display -->
+                    <div class="row">
+                        <div class="music-card">
+                            <div class="music-title">old times.wav</div>
+                            <div class="displayer">
+                                <img src="./etc/old.jpg" alt="cover image" id="space">  <!-- Change image to fit -->
+                            </div>
+                            <div class="content">
+                                <p>This is the first piece I created that truly felt like the best I'd created as of this month (July, 2025). For this piece, I experimented with different piano chords, and also used spatial audio effects (reverb) to really build the piece's environment to its fullest! This being the first of its kind, there is surely more to come!</p>
+                            </div>
+                            <div class="player">
+                                <audio class="song">
+                                    <source src="./audio/old_times.mp3" type="audio/mpeg">
+                                      Your browser does not support the audio element.
+                                </audio>
+                                <input type="range" value="0" class="progress">
+                                <div class="controls">
+                                   <div><i class="fa-solid fa-rotate-left"></i></i></div>
+                                   <div onclick="playPause()"><i class="fa-solid fa-play ctrlIcon"></i></div>
+                                   <div><i class="fa-solid fa-rotate-right"></i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <div class="music-title">space.wav</div>
+                            <div class="displayer">
+                                 <img src="./etc/space.jpeg" alt="cover image" id="space">
+                            </div>
+                            <div class="content">
+                                <p>This is the second piece as of late that has attempted to emulate spatial ambience. Diving deeper, I focused on giving this piece a sound structure to start with in comparison to the first of its kind. It also combines pitch shifting, allowing for a better transition, as well as giving a fresh perspective on the same piece!</p>
+                            </div>
+                            <div class="player">
+                                <audio class="song">
+                                    <source src="./audio/space.mp3" type="audio/mpeg">
+                                      Your browser does not support the audio element.
+                                </audio>
+                                <input type="range" value="0" class="progress">
+                                <div class="controls">
+                                   <div><i class="fa-solid fa-rotate-left"></i></i></div>
+                                   <div onclick="playPause()"><i class="fa-solid fa-play ctrlIcon"></i></div>
+                                   <div><i class="fa-solid fa-rotate-right"></i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <div class="music-title">lights out.wav</div>
+                            <div class="displayer">
+                                <img src="./etc/bulb.png" alt="cover image" id="space"> <!-- Change cover image -->
+                            </div>
+                            <div class="content">
+                                <p>This piece focuses on human spontaneity, and the ability to adapt to any situation. Inspired by a real-time scenario (a blackout), I chose to dive fully into what can be drawn from a blank slate. Linking to experimenting with ambience, this piece employs percussive techniques to amplify its instrumentalization!</p>
+                            </div>
+                            <div class="player">
+                                <audio class="song">
+                                    <source src="./audio/lights_out.mp3" type="audio/mpeg">
                                       Your browser does not support the audio element.
                                 </audio>
                                 <input type="range" value="0" class="progress">
