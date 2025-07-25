@@ -9,6 +9,9 @@
     --button-hover-bg: rgba(0, 255, 0, 0.3);
     --button-hover-color: green;
     --box-shadow-color: grey;
+    --japanese-flag: rgba(255, 0, 0, 0.8);     /* red sun symbol */
+    --spanish-flag: rgb(255, 187, 0, 1);    /* yellow from the flag */
+    --french-flag: rgba(0, 89, 255, 0.8);
 }
 
 .darkmode {
@@ -23,6 +26,9 @@
     --button-hover-bg: rgba(0, 255, 0, 0.1);/* soft green hover glow */
     --button-hover-color: #bfff00;          /* vivid green-yellow on hover */
     --box-shadow-color: #000;               /* deep shadow */
+    --japanese-flag: rgba(255, 255, 255, 1); /* white glow in dark */
+    --spanish-flag: rgba(255, 0, 0, 1);      /* red glow in dark */    
+    --french-flag: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -473,6 +479,67 @@ hr {
 .long {
     width: 80%;
     margin-bottom: 30px;
+}
+
+/* Skills */
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.flag {
+    aspect-ratio: 1 / 1;
+    width: 4%;
+    margin: 5px 13px 0 13px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.japanese:hover {
+    box-shadow: 0 0 25px var(--japanese-flag);
+}
+
+.spanish:hover {
+    box-shadow: 0px 0px 25px var(--spanish-flag);
+}
+
+.french:hover {
+    box-shadow: 0 0 25px var(--french-flag);
+}
+
+.jp-text {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0;
+    align-items: stretch;
+}
+
+.pre-jp, .post-jp {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.jp-text p {
+    width: 80%;
+}
+
+.vert {
+    border: none;
+    border-left: 2px solid var(--border-color);
+    width: 0;
+    margin: 0 1rem;
+    align-self: stretch;
 }
 
 /* Contact */
