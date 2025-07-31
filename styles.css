@@ -33,7 +33,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Funnel Display";
+    font-family: "Funnel Display", "Trebuchet MS";
     margin: 0;
     padding: 0;
 }
@@ -953,18 +953,35 @@ footer {
         font-size: 85%;
         overflow-x: hidden;
     }
+
+    /* //Important - To be changed */
+    .music-rows {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+    }
 }
 
 
-@media only screen and (min-width: 0px) and (max-width: 360px) {
+@media only screen and (min-width: 0px) and (max-width: 360px) {    /* Deal with navbar complications later */
     .navbar {
+        display: flex;
         flex-direction: row;
+        /* justify-content: space-evenly;  Figure this out*/ 
         align-items: center;
-        justify-content: space-evenly;
         padding: 25px;
         width: 100%;
         margin-bottom: 0;
-        
     }
 
     .navbar a {
@@ -999,6 +1016,7 @@ footer {
 
     #theme-switch {
         top: 170px;
+        position: absolute;
     }
 
     .intro p, .projects p, .contact p {
@@ -1036,6 +1054,7 @@ footer {
         font-size: 85%;
         overflow-x: hidden;
     }
+    /* //Important - To be added: .music-rows and .controls*/
 }
 
 
